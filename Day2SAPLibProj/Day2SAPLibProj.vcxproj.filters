@@ -15,13 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="day2_1_sha1.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="day2_2_sha256.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="day2_3_aes_ecb.cpp">
+    <ClCompile Include="day2_4_aes_cbc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
