@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="day2_4_aes_cbc.cpp">
+    <ClCompile Include="day2_7_rsa_signature_verify.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

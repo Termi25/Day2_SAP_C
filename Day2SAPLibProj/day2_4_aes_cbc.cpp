@@ -3,6 +3,9 @@
 #include<malloc.h>
 #include<openssl\aes.h>
 
+//TO-DO: extend implementation for binary and text so that there no inputed data in the program itself, aslo output it as binary and text
+//TO-DO: 
+//TO-DO: 
 int main() {
 	printf("AES in CBC mode with 128bit key and Initialisation Vector:\n");
 	printf("----------------------------------------------------------\n");
@@ -58,6 +61,7 @@ int main() {
 
 	unsigned char IV2[] = {0xa1,0xb2,0xc3,0xd4,0xe5,0xf6,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff}; 
 	//the original IV value is modified by the aes cbc encryption function, which invalidates the decryption
+	//can use memcpy to copy the content before the initial encrypt call
 
 	AES_set_decrypt_key(key_128, sizeof(key_128) * 8, &aes_key);
 	AES_cbc_encrypt(ciphertext, restoredtext, sizeof(plaintext), &aes_key, IV2, AES_DECRYPT);
